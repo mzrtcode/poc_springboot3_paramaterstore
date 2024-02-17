@@ -45,3 +45,5 @@ Este proyecto te permite cargar las variables de entorno de manera dinámica, ba
 ## Contribuciones 🤝
 
 ¡Las contribuciones son bienvenidas! Si encuentras algún problema o tienes sugerencias, no dudes en abrir un [issue](https://github.com/tu-usuario/tu-proyecto/issues).
+
+👉🏼Basado en: https://boottechnologies-ci.medium.com/aws-systems-manager-parameter-store-ssm-with-spring-boot-3-10d112595c6a
