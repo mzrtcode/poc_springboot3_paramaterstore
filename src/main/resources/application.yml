@@ -1,0 +1,37 @@
+server:
+  port: 8082
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: servicio-mensajeria
+  cloud:
+    aws:
+      credentials:
+        use-default-aws-credentials-chain: true # con esto toma mis credenciales en usuario/.aws/credentialss
+        # access-key: <colocar access key personalizado>
+        # secret-key: <colocar secret key personalizado>
+        profile:
+          name: default
+      region:
+        static: us-east-2
+  config:
+    import:
+      - aws-parameterstore:/config/application_${spring.profiles.active}/
+
+  datasource:
+    url: ${db_url}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${db_username}
+    password: ${db_password}
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+
+jwt:
+  secret: F65FD4A5E454FD5A4F5DAS4F5E45FADFSADF12ADF2ASD4F5AE1
