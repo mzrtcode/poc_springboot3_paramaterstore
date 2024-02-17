@@ -30,6 +30,8 @@ Este proyecto te permite cargar las variables de entorno de manera dinámica, ba
       profiles:
         active: dev  # Cambia a 'prod' para entorno de producción
     ```
+    ![image](https://github.com/mzrtcode/poc_springboot3_paramaterstore/assets/71569136/6ee360d1-12ea-4688-9515-39a99e669440)
+
 
 ## Uso del Proyecto 🚀
 
